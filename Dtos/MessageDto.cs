@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 
-namespace SimpleProjectSE2.Dtos
+namespace q.Dtos
 {
     public class MessageDto
     {

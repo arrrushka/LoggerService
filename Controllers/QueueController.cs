@@ -4,11 +4,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using SimpleProjectSE2.Dtos;
-using SimpleProjectSE2.Models;
-using SimpleProjectSE2.Repositories.Interfaces;
+using q.Dtos;
+using q.Models;
+using q.Repositories.Interfaces;
 
-namespace SimpleProjectSE2.Controllers
+namespace q.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

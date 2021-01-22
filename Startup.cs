@@ -14,12 +14,12 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
-using SimpleProjectSE2.Data;
-using SimpleProjectSE2.Hubs;
-using SimpleProjectSE2.Repositories;
-using SimpleProjectSE2.Repositories.Interfaces;
+using q.Data;
+using q.Hubs;
+using q.Repositories;
+using q.Repositories.Interfaces;
 
-namespace SimpleProjectSE2
+namespace q
 {
     public class Startup
     {
@@ -43,8 +43,6 @@ namespace SimpleProjectSE2
 
             services.AddSignalR();
             services.AddCors();
-            services.AddScoped<IAuthRepository, AuthRepository>();
-            services.AddScoped<IStudentRepository, StudentRepository>();
             services.AddScoped<IQueueRepository, QueueRepository>();
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options => {
